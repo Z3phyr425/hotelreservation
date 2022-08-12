@@ -22,48 +22,9 @@
     <title>Eastwoods International Hotel</title>
 </head>
 <body>
-    <div id="header">
-        <h3>
-            <?php echo $_SESSION['User'];?>
-        </h3>
-        <form action="" method="post">
-            <input type="submit" name="logout" value="Logout" class="btn1">
-            <?php
-                if(isset($_POST['logout'])){
-                    session_destroy();
-                    header("location: login.php");
-                }
-            ?>
-        </form>
-        <?php
-            if($role == "Admin"){
-                echo "  <ul>
-                            <li><a href=\"indexportal.php\">Home</a></li>
-                            <li><a href=\"\">Tab2</a>
-                                <ul>
-                                    <li><a href=\"#\">Tab2.1</a></li>
-                                    <li><a href=\"#\">Tab2.2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href=\"\">Tab3</a>
-                                <ul>
-                                    <li><a href=\"#\">Tab3.1</a></li>
-                                </ul>
-                            </li>
-                        </ul>";
-            }else{
-                echo "  <ul>
-                            <li><a href=\"indexportal.php\">Home</a></li>
-                            <li><a href=\"\">My Profile</a>
-                                <ul>
-                                    <li><a href=\"#\">View Profile</a></li>
-                                    <li><a href=\"#\">Edit Profile</a></li>
-                                </ul>
-                            </li>
-                        </ul>";
-            }
-        ?>
-    </div>
+    <?php
+        include("header.php");
+    ?>
     <div id="body">
     
     </div>
