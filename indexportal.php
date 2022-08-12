@@ -1,3 +1,18 @@
+<?php
+    include("connection.php");
+    session_start();
+    
+    if(isset($_SESSION['User'])){
+        $selectlogin = "SELECT * FROM `tbllogin` WHERE `uname`='".$_SESSION['User']."'";
+        $sqlselectlogin = mysqli_query($conn, $selectlogin);
+        $fetchselectlogin = mysqli_fetch_assoc($sqlselectlogin);
+
+        $username = $_SESSION['User'];
+        $role = $fetchselectlogin['urole'];
+    }else{
+        header("location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +23,49 @@
 </head>
 <body>
     <div id="header">
-
+        <h3>
+            <?php echo $_SESSION['User'];?>
+        </h3>
+        <form action="" method="post">
+            <input type="submit" name="logout" value="Logout" class="btn1">
+            <?php
+                if(isset($_POST['logout'])){
+                    session_destroy();
+                    header("location: login.php");
+                }
+            ?>
+        </form>
+        <?php
+            if($role == "Admin"){
+                echo "  <ul>
+                            <li><a href=\"indexportal.php\">Home</a></li>
+                            <li><a href=\"\">Tab2</a>
+                                <ul>
+                                    <li><a href=\"#\">Tab2.1</a></li>
+                                    <li><a href=\"#\">Tab2.2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=\"\">Tab3</a>
+                                <ul>
+                                    <li><a href=\"#\">Tab3.1</a></li>
+                                </ul>
+                            </li>
+                        </ul>";
+            }else{
+                echo "  <ul>
+                            <li><a href=\"indexportal.php\">Home</a></li>
+                            <li><a href=\"\">My Profile</a>
+                                <ul>
+                                    <li><a href=\"#\">View Profile</a></li>
+                                    <li><a href=\"#\">Edit Profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>";
+            }
+        ?>
     </div>
     <div id="body">
-        wews
+    
     </div>
     <div id="footer">
 
