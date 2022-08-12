@@ -17,10 +17,10 @@
     <div id="body">
         <form action="" method="post">
             <h2>SIGN IN</h2>
-            <label for="">Username: </label><input type="text" name="username" class="text1" required>
+            <label for="" class="labels">Username: </label><input type="text" name="username" class="text1" required>
             <br>
             <br>
-            <label for="">Password: </label><input type="password" name="password" class="text1" required>
+            <label for="" class="labels">Password: </label><input type="password" name="password" class="text1" required>
             <br>
             <?php
                 if(isset($_POST['login'])){
