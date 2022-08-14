@@ -28,12 +28,16 @@
             background:white;
         }
         .container{
-            margin-top: 5%;
             width:60%;
             height: calc(500px);
             background: #132332;
             border-radius: 20px;
-
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
         #login-left {
             background: url(img/bg_login.jpg);
@@ -49,7 +53,6 @@
             border: none;
             border-bottom: solid 1px #ffffff;
             outline: none;
-            padding-top: 1vh;
         }
         .btn_login{
             width: 100%;
@@ -57,13 +60,11 @@
             border-radius: 20px;
             color: #ffffff;
         }
-        .login_container{
-            padding-bottom: 14vh;
-        }
         </style>
 </head>
 <body>
-    <div class="container h-100 p-5">
+<main id="main" class="alert-info">
+    <div class="container">
         <div class="row row_login">
             <div class="col-md-6" id="login-left">
                 <!-- Logo is here-->
@@ -122,7 +123,7 @@
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center text-white">
-                        <div class="col-md-9 login_container">
+                        <div class="col-md-9">
                             <input type="submit" name="login" class="btn btn_login btn-block btn-wave col-md-4 mt-3" value="Login">
                         </div>
                     </div>
@@ -130,6 +131,7 @@
             </div>
         </div>
     </div>
+</main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
