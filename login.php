@@ -48,6 +48,7 @@
             background: none;
             border: none;
             border-bottom: solid 1px #ffffff;
+            outline: none;
         }
         .btn_login{
             width: 100%;
@@ -83,7 +84,7 @@
                     </div>
                     <div class="row d-flex justify-content-center text-white">
                         <div class="col-md-9">
-                            <input type="text" class="input_ w-100 text-white" name="username" placeholder="Enter you username" required>
+                            <input type="text" class="input_ w-100 text-white" name="username" placeholder="Enter username" required>
                         </div>
                     </div>
                     <div class="row mt-3 d-flex justify-content-center text-white">
@@ -93,7 +94,7 @@
                     </div>
                     <div class="row d-flex justify-content-center text-white">
                         <div class="col-md-9">
-                            <input type="password" class="input_ w-100 text-white" name="password" placeholder="Enter you password" required>
+                            <input type="password" class="input_ w-100 text-white" name="password" placeholder="Enter password" required>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center text-white">
