@@ -1,6 +1,7 @@
 <?php
     include("connection.php");
     session_start();
+    error_reporting(0);
     
     if(isset($_SESSION['User'])){
         $selectlogin = "SELECT * FROM `tbllogin` WHERE `uname`='".$_SESSION['User']."'";

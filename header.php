@@ -32,8 +32,8 @@
                             <li><a href=\"indexportal.php\">Home</a></li>
                             <li><a href=\"\">My Profile</a>
                                 <ul>
-                                    <li><a href=\"#\">View Profile</a></li>
-                                    <li><a href=\"#\">Edit Profile</a></li>
+                                    <li><a href=\"viewprofile.php\">View Profile</a></li>
+                                    <li><a href=\"editprofile.php\">Edit Profile</a></li>
                                 </ul>
                             </li>
                         </ul>";
