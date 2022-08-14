@@ -29,7 +29,7 @@
         }
         .container{
             width:60%;
-            height: calc(80vh);
+            height: calc(500px);
             background: #132332;
             border-radius: 20px;
             margin: 0;
@@ -64,7 +64,7 @@
 </head>
 <body>
 <main id="main" class="alert-info">
-    <div class="container ">
+    <div class="container">
         <div class="row row_login">
             <div class="col-md-6" id="login-left">
                 <!-- Logo is here-->
