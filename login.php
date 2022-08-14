@@ -49,6 +49,7 @@
             border: none;
             border-bottom: solid 1px #ffffff;
             outline: none;
+            padding-top: 1em;
         }
         .btn_login{
             width: 100%;
@@ -56,11 +57,13 @@
             border-radius: 20px;
             color: #ffffff;
         }
+        .login_container{
+            padding-bottom: 14em;
+        }
         </style>
 </head>
 <body>
-<main id="main" class=" alert-info">
-    <div class="container">
+    <div class="container h-100 p-5">
         <div class="row row_login">
             <div class="col-md-6" id="login-left">
                 <!-- Logo is here-->
@@ -119,7 +122,7 @@
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center text-white">
-                        <div class="col-md-9">
+                        <div class="col-md-9 login_container">
                             <input type="submit" name="login" class="btn btn_login btn-block btn-wave col-md-4 mt-3" value="Login">
                         </div>
                     </div>
@@ -127,7 +130,6 @@
             </div>
         </div>
     </div>
-</main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
