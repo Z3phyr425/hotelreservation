@@ -29,7 +29,7 @@
         }
         .container{
             width:60%;
-            height: calc(500px);
+            height: calc(80%);
             background: #132332;
             border-radius: 20px;
             margin: 0;
@@ -53,12 +53,16 @@
             border: none;
             border-bottom: solid 1px #ffffff;
             outline: none;
+            font-size: 20px;
         }
         .btn_login{
             width: 100%;
             background-color: #CA8749;
             border-radius: 20px;
             color: #ffffff;
+        }
+        .control-label{
+            font-size: 13px;
         }
         </style>
 </head>
@@ -116,7 +120,7 @@
                                             window.location.href = \"indexportal.php\";
                                         </script>";
                             }else{
-                                echo "  <span style=\"color:red;font-size:9pt\">Wrong Credentials!</span>";
+                                echo "  <span style=\"color:red; font-size:9pt\">Incorrect username or password!</span>";
                             }
                         }
 ?>
